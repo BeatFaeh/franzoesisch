@@ -37,13 +37,14 @@
 .exam-intro{border-top-color:#2563a6}.exam-question{border-left-color:#c83a42}.exam-progress-box{background:#e7f1fb;color:#174a7e}.exam-option:hover,.exam-option:has(input:checked){border-color:#2563a6}.exam-option input{accent-color:#2563a6}.exam-result{border-top-color:#2563a6}.exam-score strong{color:#c83a42}
 .exam-config-card{margin-bottom:20px;padding:clamp(22px,4vw,36px);border-radius:20px;background:var(--paper);box-shadow:0 16px 45px rgba(72,56,35,.11);border-top:6px solid #2563a6}
 .exam-config-card h2{margin:4px 0 18px;font-size:clamp(24px,4vw,34px)}
-.exam-config-form{display:grid;grid-template-columns:minmax(180px,1fr) minmax(220px,1fr) auto;gap:14px;align-items:end}
-.exam-config-form label{display:grid;gap:7px;color:var(--ink);font-weight:800}
+.exam-config-form{display:flex;flex-direction:column;gap:22px;width:100%}
+.exam-config-form>label{display:grid;gap:7px;width:100%;color:var(--ink);font-weight:800}
 .exam-config-form select{width:100%;min-height:46px;padding:10px 12px;border:2px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font:inherit}
 .exam-config-form select:focus{outline:none;border-color:#2563a6;box-shadow:0 0 0 3px rgba(37,99,166,.12)}
-.exam-config-form .button{min-height:46px}
+.exam-config-form .lesson-multiselect{display:flex;flex-wrap:wrap;gap:10px 14px;width:100%}
+.exam-config-form .button{align-self:flex-start;min-height:46px;margin-top:4px}
 .exam-hint{margin-top:12px!important;padding:10px 12px;border-radius:10px;background:#fff4d9;color:#7a5813!important;font-weight:700}
-@media(max-width:720px){.exam-config-form{grid-template-columns:1fr}.exam-config-form .button{width:100%}}
+@media(max-width:720px){.exam-config-form .button{width:100%}}
 
 
 .exam-option:disabled{cursor:default;opacity:1}
